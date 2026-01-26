@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="WordSprint.Api/WordSprint.Api.csproj" />
+  <Project Path="WordSprint.Application/WordSprint.Application.csproj" />
+  <Project Path="WordSprint.Core/WordSprint.Core.csproj" />
+  <Project Path="WordSprint.Infrastructure/WordSprint.Infrastructure.csproj" />
+</Solution>

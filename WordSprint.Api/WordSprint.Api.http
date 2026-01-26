@@ -1,0 +1,6 @@
+@WordSprint.Api_HostAddress = http://localhost:5017
+
+GET {{WordSprint.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
