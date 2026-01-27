@@ -27,8 +27,4 @@
     <ProjectReference Include="..\WordSprint.Infrastructure\WordSprint.Infrastructure.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
 </Project>
