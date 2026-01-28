@@ -6,6 +6,8 @@ using System.Text;
 using WordSprint.Infrastructure.Identity;
 using WordSprint.Infrastructure.Persistence;
 using WordSprint.Infrastructure.Seed;
+using Microsoft.OpenApi.Models;
+
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -54,7 +56,15 @@ builder.Services.AddScoped<WordSprint.Api.Services.JwtTokenService>();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.MapType<IFormFile>(() => new OpenApiSchema
+    {
+        Type = "string",
+        Format = "binary"
+    });
+});
+
 
 var app = builder.Build();
 using (var scope = app.Services.CreateScope())
@@ -71,6 +81,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseStaticFiles();
+
 
 // IMPORTANT ORDER
 app.UseAuthentication();

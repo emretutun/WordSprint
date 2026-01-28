@@ -14,4 +14,6 @@ public class ApplicationUser : IdentityUser
 
     public int DailyWordGoal { get; set; } = 10;
     public string? EstimatedLevel { get; set; }
+
+    public string? ProfilePhotoFileName { get; set; }
 }
