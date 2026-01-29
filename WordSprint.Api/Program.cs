@@ -7,6 +7,7 @@ using WordSprint.Infrastructure.Identity;
 using WordSprint.Infrastructure.Persistence;
 using WordSprint.Infrastructure.Seed;
 using Microsoft.OpenApi.Models;
+using WordSprint.Api.Services;
 
 
 
@@ -24,9 +25,14 @@ builder.Services.AddIdentityCore<ApplicationUser>(options =>
     options.Password.RequireLowercase = false;
     options.Password.RequireDigit = false;
     options.Password.RequiredLength = 6;
+
+    
+    // options.SignIn.RequireConfirmedEmail = true;
 })
 .AddEntityFrameworkStores<WordSprintDbContext>()
-.AddSignInManager(); // login için iþimizi kolaylaþtýrýr
+.AddSignInManager()
+.AddDefaultTokenProviders();   
+
 
 // JWT Authentication
 builder.Services.AddAuthentication(options =>
@@ -52,6 +58,7 @@ builder.Services.AddAuthentication(options =>
 
 builder.Services.AddAuthorization();
 builder.Services.AddScoped<WordSprint.Api.Services.JwtTokenService>();
+builder.Services.AddScoped<EmailService>();
 
 
 builder.Services.AddControllers();
