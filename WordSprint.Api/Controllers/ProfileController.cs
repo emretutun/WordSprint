@@ -20,11 +20,13 @@ public class ProfileController : ControllerBase
 {
     private readonly UserManager<ApplicationUser> _userManager;
     private readonly WordSprintDbContext _db;
+    private readonly IConfiguration _config;
 
-    public ProfileController(UserManager<ApplicationUser> userManager, WordSprintDbContext db)
+    public ProfileController(UserManager<ApplicationUser> userManager, WordSprintDbContext db, IConfiguration config)
     {
         _userManager = userManager;
         _db = db;
+        _config = config;
     }
 
     [HttpGet]
@@ -37,13 +39,18 @@ public class ProfileController : ControllerBase
         var user = await _userManager.FindByIdAsync(userId);
         if (user == null)
             return Unauthorized();
+        var publicBaseUrl = _config["App:PublicBaseUrl"];
+        var baseUrl = !string.IsNullOrWhiteSpace(publicBaseUrl)
+            ? publicBaseUrl.TrimEnd('/')
+            : $"{Request.Scheme}://{Request.Host}";
 
         var fileName = string.IsNullOrWhiteSpace(user.ProfilePhotoFileName)
-            ? "default.png"
+            ? "default.jpg"
             : user.ProfilePhotoFileName;
 
-        var baseUrl = $"{Request.Scheme}://{Request.Host}";
         var photoUrl = $"{baseUrl}/uploads/avatars/{fileName}";
+
+
 
         return Ok(new ProfileResponse
         {
@@ -129,7 +136,7 @@ public class ProfileController : ControllerBase
 
         // eski dosyayı sil (default değilse)
         if (!string.IsNullOrWhiteSpace(user.ProfilePhotoFileName) &&
-            user.ProfilePhotoFileName != "default.png")
+            user.ProfilePhotoFileName != "default.jpg")
         {
             var oldPath = Path.Combine(avatarsDir, user.ProfilePhotoFileName);
             if (System.IO.File.Exists(oldPath))
@@ -143,7 +150,11 @@ public class ProfileController : ControllerBase
             return BadRequest(result.Errors.Select(e => e.Description));
 
         // client isterse hemen kullanabilsin diye URL de dönelim
-        var baseUrl = $"{Request.Scheme}://{Request.Host}";
+        var publicBaseUrl = _config["App:PublicBaseUrl"];
+        var baseUrl = !string.IsNullOrWhiteSpace(publicBaseUrl)
+            ? publicBaseUrl.TrimEnd('/')
+            : $"{Request.Scheme}://{Request.Host}";
+
         var photoUrl = $"{baseUrl}/uploads/avatars/{fileName}";
 
         return Ok(new { fileName, photoUrl });
