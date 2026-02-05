@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using WordSprint.Infrastructure.Persistence;
@@ -11,9 +12,11 @@ using WordSprint.Infrastructure.Persistence;
 namespace WordSprint.Infrastructure.Migrations
 {
     [DbContext(typeof(WordSprintDbContext))]
-    partial class WordSprintDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260204185507_AddWordLevel")]
+    partial class AddWordLevel
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -243,6 +246,9 @@ namespace WordSprint.Infrastructure.Migrations
 
                     b.Property<bool>("EmailConfirmed")
                         .HasColumnType("boolean");
+
+                    b.Property<string>("EstimatedLevel")
+                        .HasColumnType("text");
 
                     b.Property<string>("FirstName")
                         .HasColumnType("text");

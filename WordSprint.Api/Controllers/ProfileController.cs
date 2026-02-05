@@ -1,14 +1,14 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
 using WordSprint.Api.Models.Profile;
+using WordSprint.Core.Enums;
 using WordSprint.Infrastructure.Identity;
-using Microsoft.EntityFrameworkCore;
 using WordSprint.Infrastructure.Persistence;
-
 
 namespace WordSprint.Api.Controllers;
 
@@ -16,7 +16,6 @@ namespace WordSprint.Api.Controllers;
 [Route("api/[controller]")]
 [Authorize]
 public class ProfileController : ControllerBase
-
 {
     private readonly UserManager<ApplicationUser> _userManager;
     private readonly WordSprintDbContext _db;
@@ -29,6 +28,12 @@ public class ProfileController : ControllerBase
         _config = config;
     }
 
+    private static void EnsureValidLevel(short level)
+    {
+        if (level < 0 || level > 5)
+            throw new ArgumentException("Level must be between 0 and 5.");
+    }
+
     [HttpGet]
     public async Task<IActionResult> Get()
     {
@@ -39,6 +44,7 @@ public class ProfileController : ControllerBase
         var user = await _userManager.FindByIdAsync(userId);
         if (user == null)
             return Unauthorized();
+
         var publicBaseUrl = _config["App:PublicBaseUrl"];
         var baseUrl = !string.IsNullOrWhiteSpace(publicBaseUrl)
             ? publicBaseUrl.TrimEnd('/')
@@ -50,8 +56,6 @@ public class ProfileController : ControllerBase
 
         var photoUrl = $"{baseUrl}/uploads/avatars/{fileName}";
 
-
-
         return Ok(new ProfileResponse
         {
             UserId = user.Id,
@@ -59,7 +63,7 @@ public class ProfileController : ControllerBase
             FirstName = user.FirstName,
             LastName = user.LastName,
             DailyWordGoal = user.DailyWordGoal,
-            EstimatedLevel = user.EstimatedLevel,
+            Level = (short)user.Level,
             PhotoUrl = photoUrl
         });
     }
@@ -78,7 +82,12 @@ public class ProfileController : ControllerBase
         // null olan alanlara dokunma
         if (request.FirstName != null) user.FirstName = request.FirstName;
         if (request.LastName != null) user.LastName = request.LastName;
-        if (request.EstimatedLevel != null) user.EstimatedLevel = request.EstimatedLevel;
+
+        if (request.Level.HasValue)
+        {
+            EnsureValidLevel(request.Level.Value);
+            user.Level = (CeLevel)request.Level.Value;
+        }
 
         if (request.DailyWordGoal.HasValue)
         {
@@ -149,7 +158,6 @@ public class ProfileController : ControllerBase
         if (!result.Succeeded)
             return BadRequest(result.Errors.Select(e => e.Description));
 
-        // client isterse hemen kullanabilsin diye URL de dönelim
         var publicBaseUrl = _config["App:PublicBaseUrl"];
         var baseUrl = !string.IsNullOrWhiteSpace(publicBaseUrl)
             ? publicBaseUrl.TrimEnd('/')
@@ -181,8 +189,6 @@ public class ProfileController : ControllerBase
         var totalAnswered = totalCorrect + totalWrong;
         var successRate = totalAnswered == 0 ? 0 : (double)totalCorrect / totalAnswered * 100.0;
 
-        // Şimdilik "bugün learned" = bugün içinde LastTestedAt ile learned olanlar gibi approx
-        // Daha doğru tracking'i ileride ekleyeceğiz (LearnedAtUtc alanı ile)
         var todayUtc = DateTime.UtcNow.Date;
         var todayLearned = await _db.UserWords.CountAsync(x =>
             x.UserId == userId &&
@@ -200,6 +206,4 @@ public class ProfileController : ControllerBase
             TodayLearned = todayLearned
         });
     }
-
-
 }

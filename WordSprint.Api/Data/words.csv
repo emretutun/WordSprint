@@ -1,0 +1,1542 @@
+﻿english,turkish,level
+because,çünkü,1
+however,ancak,2
+although,rağmen,2
+example,örnek,1
+quick,hızlı,0
+apple,elma,0
+book,kitap,0
+car,araba,0
+water,su,0
+house,ev,0
+school,okul,0
+friend,arkadaş,0
+family,aile,0
+city,şehir,0
+food,yemek,0
+day,gün,0
+night,gece,0
+man,adam,0
+woman,kadın,0
+child,çocuk,0
+boy,oğlan,0
+girl,kız,0
+mother,anne,0
+father,baba,0
+brother,erkek kardeş,0
+sister,kız kardeş,0
+name,isim,0
+time,zaman,0
+year,yıl,0
+week,hafta,0
+today,bugün,0
+tomorrow,yarın,0
+yesterday,dün,0
+morning,sabah,0
+evening,akşam,0
+work,iş,0
+job,meslek,0
+money,para,0
+price,fiyat,0
+shop,dükkan,0
+market,market,0
+street,sokak,0
+road,yol,0
+country,ülke,0
+world,dünya,0
+home,ev,0
+room,oda,0
+bed,yatak,0
+table,masa,0
+chair,sandalye,0
+door,kapı,0
+window,pencere,0
+phone,telefon,0
+computer,bilgisayar,0
+internet,internet,0
+music,müzik,0
+movie,film,0
+game,oyun,0
+color,renk,0
+red,kırmızı,0
+blue,mavi,0
+green,yeşil,0
+black,siyah,0
+white,beyaz,0
+big,büyük,0
+small,küçük,0
+long,uzun,0
+short,kısa,0
+new,yeni,0
+old,eski,0
+good,iyi,0
+bad,kötü,0
+easy,kolay,0
+hard,zor,0
+happy,mutlu,0
+sad,üzgün,0
+angry,kızgın,0
+tired,yorgun,0
+hungry,aç,0
+thirsty,susamış,0
+hot,sıcak,0
+cold,soğuk,0
+open,açık,0
+close,kapalı,0
+start,başlamak,0
+finish,bitirmek,0
+go,gitmek,0
+come,gelmek,0
+see,görmek,0
+look,bakmak,0
+hear,duymak,0
+listen,dinlemek,0
+speak,konuşmak,0
+say,söylemek,0
+read,okumak,0
+write,yazmak,0
+learn,öğrenmek,0
+teach,öğretmek,0
+eat,yemek yemek,0
+drink,içmek,0
+sleep,uyumak,0
+wake,uyanmak,0
+run,koşmak,0
+walk,yürümek,0
+sit,oturmak,0
+stand,ayakta durmak,0
+buy,satın almak,0
+sell,satmak,0
+pay,ödemek,0
+use,kullanmak,0
+make,yapmak,0
+give,vermek,0
+take,almak,0
+help,yardım etmek,0
+love,sevmek,0
+like,hoşlanmak,0
+want,istemek,0
+need,ihtiyaç duymak,0
+know, bilmek,0
+think,düşünmek,0
+feel,hissetmek,0
+live,yaşamak,0
+work,çalışmak,0
+play,oynamak,0
+try,denemek,0
+before,önce,0
+after,sonra,0
+now,şimdi,0
+early,erken,0
+late,geç,0
+always,her zaman,0
+often,sık sık,0
+sometimes,bazen,0
+never,asla,0
+here,burada,0
+there,orada,0
+inside,içeride,0
+outside,dışarıda,0
+left,sol,0
+right,sağ,0
+up,yukarı,0
+down,aşağı,0
+near,yakın,0
+far,uzak,0
+same,aynı,0
+different,farklı,0
+full,dolu,0
+empty,boş,0
+clean,temiz,0
+dirty,kirli,0
+fast,hızlı,0
+slow,yavaş,0
+strong,güçlü,0
+weak,zayıf,0
+young,genç,0
+old,yaşlı,0
+beautiful,güzel,0
+ugly,çirkin,0
+important,önemli,0
+cheap,ucuz,0
+expensive,pahalı,0
+busy,meşgul,0
+free,boş,0
+ready,hazır,0
+safe,güvenli,0
+dangerous,tehlikeli,0
+true,doğru,0
+false,yanlış,0
+right,doğru,0
+wrong,yanlış,0
+question,soru,0
+answer,cevap,0
+problem,sorun,0
+idea,fikir,0
+plan,plan,0
+story,hikaye,0
+news,haber,0
+place,yer,0
+thing,şey,0
+person,kişi,0
+people,insanlar,0
+group,grup,0
+team,takım,0
+company,şirket,0
+office,ofis,0
+schoolbag,okul çantası,0
+class,sınıf,0
+lesson,ders,0
+teacher,öğretmen,0
+student,öğrenci,0
+bookstore,kitapçı,0
+library,kütüphane,0
+hospital,hastane,0
+doctor,doktor,0
+nurse,hemşire,0
+police,polis,0
+fireman,itfaiyeci,0
+driver,sürücü,0
+worker,işçi,0
+farmer,çiftçi,0
+engineer,mühendis,0
+manager,yönetici,0
+boss,patron,0
+customer,müşteri,0
+guest,misafir,0
+neighbor,komşu,0
+friendship,dostluk,0
+meeting,toplantı,0
+party,parti,0
+holiday,tatil,0
+travel,seyahat etmek,0
+trip,gezi,0
+journey,yolculuk,0
+ticket,bilet,0
+hotel,otel,0
+roommate,oda arkadaşı,0
+breakfast,kahvaltı,0
+lunch,öğle yemeği,0
+dinner,akşam yemeği,0
+meal,öğün,0
+bread,ekmek,0
+rice,pirinç,0
+meat,et,0
+chicken,tavuk,0
+fish,balık,0
+egg,yumurta,0
+milk,süt,0
+cheese,peynir,0
+butter,tereyağı,0
+salt,tuz,0
+sugar,şeker,0
+tea,çay,0
+coffee,kahve,0
+juice,meyve suyu,0
+fruit,meyve,0
+vegetable,sebze,0
+apple,elma,0
+banana,muz,0
+orange,portakal,0
+grape,üzüm,0
+lemon,limon,0
+tomato,domates,0
+potato,patates,0
+onion,soğan,0
+pepper,biber,0
+street,sokak,0
+bridge,köprü,0
+park,park,0
+garden,bahçe,0
+building,bina,0
+floor,kat,0
+kitchen,mutfak,0
+bathroom,banyo,0
+toilet,tuvalet,0
+shower,duş,0
+mirror,ayna,0
+light,ışık,0
+lamp,lamba,0
+clock,saat,0
+watch,kol saati,0
+bag,çanta,0
+shoe,ayakkabı,0
+shirt,gömlek,0
+pants,pantolon,0
+dress,elbise,0
+jacket,ceket,0
+coat,ceket,0
+hat,şapka,0
+scarf,atkı,0
+glasses,gözlük,0
+key,anahtar,0
+wallet,cüzdan,0
+card,kart,0
+paper,kağıt,0
+pen,kalem,0
+pencil,kurşun kalem,0
+booklet,broşür,0
+newspaper,gazete,0
+letter,mektup,0
+email,e-posta,0
+message,mesaj,0
+number,sayı,0
+question mark,soru işareti,0
+answer key,cevap anahtarı,0
+example,örnek,0
+test,test,0
+exam,sınav,0
+result,sonuç,0
+score,puan,0
+success,başarı,0
+failure,başarısızlık,0
+win,kazanmak,0
+lose,kaybetmek,0
+start time,başlangıç zamanı,0
+end time,bitiş zamanı,0
+minute,dakika,0
+hour,saat,0
+second,saniye,0
+weather,hava durumu,0
+sun,güneş,0
+moon,ay,0
+star,yıldız,0
+sky,gökyüzü,0
+cloud,bulut,0
+rain,yağmur,0
+snow,kar,0
+wind,rüzgar,0
+season,mevsim,0
+spring,ilkbahar,0
+summer,yaz,0
+autumn,sonbahar,0
+winter,kış,0
+north,kuzey,0
+south,güney,0
+east,doğu,0
+west,batı,0
+map,harita,0
+direction,yön,0
+center,merkez,0
+front,ön,0
+back,arka,0
+top,üst,0
+bottom,alt,0
+begin,başlamak,0
+end,bitirmek,0
+continue,devam etmek,0
+stop,durmak,0
+wait,beklemek,0
+arrive,varmak,0
+leave,ayrılmak,0
+enter,girmek,0
+exit,çıkmak,0
+open door,kapıyı açmak,0
+close door,kapıyı kapatmak,0
+turn on,açmak,0
+turn off,kapatmak,0
+bring,getirmek,0
+carry,taşımak,0
+send,göndermek,0
+receive,almak,0
+call,aramak,0
+answer call,çağrıyı cevaplamak,0
+meet,buluşmak,0
+visit,ziyaret etmek,0
+invite,davet etmek,0
+welcome,hoş geldin demek,0
+thank,teşekkür etmek,0
+apologize,özür dilemek,0
+excuse,mazur görmek,0
+please,lütfen,0
+sorry,üzgünüm,0
+yes,evet,0
+no,hayır,0
+maybe,belki,0
+okay,tamam,0
+sure,elbette,0
+because,çünkü,1
+although,rağmen,1
+however,ancak,1
+therefore,bu yüzden,1
+so,bu yüzden,1
+but,ama,1
+and,ve,1
+or,ya da,1
+if,eğer,1
+when,ne zaman,1
+while,iken,1
+before,önce,1
+after,sonra,1
+during,sırasında,1
+until,kadar,1
+since,beri,1
+again,yeniden,1
+already,zaten,1
+still,hâlâ,1
+soon,yakında,1
+finally,sonunda,1
+usually,genellikle,1
+normally,normalde,1
+probably,muhtemelen,1
+maybe,belki,1
+almost,neredeyse,1
+enough,yeterince,1
+too,çok fazla,1
+very,çok,1
+quite,oldukça,1
+really,gerçekten,1
+especially,özellikle,1
+mostly,çoğunlukla,1
+together,beraber,1
+alone,yalnız,1
+quickly,hızlıca,1
+slowly,yavaşça,1
+carefully,dikkatlice,1
+easily,kolayca,1
+suddenly,aniden,1
+immediately,hemen,1
+recently,son zamanlarda,1
+currently,şu anda,1
+locally,yerel olarak,1
+globally,küresel olarak,1
+daily,günlük,1
+weekly,haftalık,1
+monthly,aylık,1
+yearly,yıllık,1
+difference,fark,1
+reason,neden,1
+result,sonuç,1
+example,örnek,1
+situation,durum,1
+condition,koşul,1
+decision,karar,1
+choice,seçim,1
+chance,şans,1
+risk,risk,1
+experience,deneyim,1
+opinion,fikir,1
+idea,düşünce,1
+plan,plan,1
+project,proje,1
+task,görev,1
+goal,hedef,1
+success,başarı,1
+failure,başarısızlık,1
+problem,sorun,1
+solution,çözüm,1
+mistake,hata,1
+error,yanlış,1
+rule,kural,1
+law,yasa,1
+system,sistem,1
+method,yöntem,1
+process,süreç,1
+activity,aktivite,1
+event,olay,1
+meeting,toplantı,1
+discussion,tartışma,1
+agreement,anlaşma,1
+argument,tartışma,1
+support, desteklemek,1
+allow,izin vermek,1
+prevent,önlemek,1
+control,kontrol etmek,1
+manage,yönetmek,1
+organize,düzenlemek,1
+prepare,hazırlamak,1
+improve,geliştirmek,1
+develop,geliştirmek,1
+increase,arttırmak,1
+reduce,azaltmak,1
+save,kaydetmek,1
+spend,harcamak,1
+earn,kazanmak,1
+borrow,ödünç almak,1
+lend,ödünç vermek,1
+pay,ödemek,1
+cost,mal olmak,1
+value,değer,1
+price,fiyat,1
+budget,bütçe,1
+company,şirket,1
+business,iş dünyası,1
+customer,müşteri,1
+client,müşteri,1
+service,hizmet,1
+product,ürün,1
+quality,kalite,1
+quantity,miktar,1
+delivery,teslimat,1
+order,sipariş,1
+market,pazar,1
+trade,ticaret,1
+sale,satış,1
+offer,teklif,1
+advertisement,reklam,1
+promotion,tanıtım,1
+career,kariyer,1
+job,iş,1
+profession,meslek,1
+skill,yetenek,1
+ability,yetenek,1
+knowledge,bilgi,1
+education,eğitim,1
+training,eğitim,1
+course,kurs,1
+lesson,ders,1
+exam,sınav,1
+degree,derece,1
+certificate,sertifika,1
+common,yaygın,1
+general,genel,1
+specific,belirli,1
+basic,temel,1
+simple,basit,1
+complex,karmaşık,1
+useful,faydalı,1
+important,önemli,1
+necessary,gerekli,1
+possible,mümkün,1
+impossible,imkânsız,1
+available,mevcut,1
+popular,popüler,1
+famous,ünlü,1
+normal,normal,1
+strange,tuhaf,1
+similar,benzer,1
+different,farklı,1
+private,özel,1
+public,kamuya açık,1
+local,yerel,1
+national,ulusal,1
+international,uluslararası,1
+modern,modern,1
+traditional,geleneksel,1
+safe,güvenli,1
+dangerous,tehlikeli,1
+healthy,sağlıklı,1
+ill,hasta,1
+medical,tıbbi,1
+mental,zihinsel,1
+physical,fiziksel,1
+social,sosyal,1
+personal,kişisel,1
+official,resmî,1
+legal,yasal,1
+illegal,yasa dışı,1
+free,ücretsiz,1
+paid,ücretli,1
+cheap,ucuz,1
+expensive,pahalı,1
+busy,meşgul,1
+free time,boş zaman,1
+schedule,program,1
+appointment,randevu,1
+deadline,son teslim tarihi,1
+delay,gecikme,1
+cancel,iptal etmek,1
+confirm,onaylamak,1
+agree,kabul etmek,1
+disagree,katılmamak,1
+refuse,reddetmek,1
+accept,kabul etmek,1
+offer,teklif etmek,1
+request,istek,1
+suggest,önermek,1
+advise,tavsiye etmek,1
+recommend,önermek,1
+promise,söz vermek,1
+warn,uyarmak,1
+complain,şikâyet etmek,1
+apologize,özür dilemek,1
+forgive,affetmek,1
+explain,açıklamak,1
+describe,tanımlamak,1
+report,rapor etmek,1
+announce,duyurmak,1
+discuss,tartışmak,1
+argue,tartışmak,1
+mention,bahsetmek,1
+notice,fark etmek,1
+realize,farkına varmak,1
+remember,hatırlamak,1
+forget,unutmak,1
+decide,karar vermek,1
+choose,seçmek,1
+prefer,tercih etmek,1
+expect,ummak,1
+hope,umut etmek,1
+believe,inanmak,1
+trust,güvenmek,1
+doubt,şüphe duymak,1
+seem,görünmek,1
+appear,görünmek,1
+happen,olmak,1
+occur,gerçekleşmek,1
+cause,neden olmak,1
+lead to,yol açmak,1
+depend on,bağlı olmak,1
+include,içermek,1
+contain,içermek,1
+provide,sağlamak,1
+require,gerektirmek,1
+allow,izin vermek,1
+prevent,önlemek,1
+protect,korumak,1
+support, desteklemek,1
+create,oluşturmak,1
+produce,üretmek,1
+build,inşa etmek,1
+design,tasarlamak,1
+develop,geliştirmek,1
+improve,iyileştirmek,1
+change,değiştirmek,1
+replace,değiştirmek,1
+fix,düzeltmek,1
+repair,tamir etmek,1
+break,kırmak,1
+damage,zarar vermek,1
+check,kontrol etmek,1
+test,test etmek,1
+measure,ölçmek,1
+count,saymak,1
+compare,karşılaştırmak,1
+connect,bağlamak,1
+separate,ayırmak,1
+share,paylaşmak,1
+join,katılmak,1
+follow,takip etmek,1
+lead,yönetmek,1
+opportunity,fırsat,1
+advantage,avantaj,1
+disadvantage,dezavantaj,1
+benefit,fayda,1
+feature,özellik,1
+detail,detay,1
+background,arka plan,1
+context,bağlam,1
+trend,eğilim,1
+impact,etki,1
+effect,etki,1
+cause,neden,1
+factor,faktör,1
+option,seçenek,1
+alternative,alternatif,1
+priority,öncelik,1
+strategy,strateji,1
+approach,yaklaşım,1
+policy,politika,1
+procedure,prosedür,1
+guideline,rehber,1
+standard,standart,1
+quality control,kalite kontrolü,1
+performance,performans,1
+efficiency,verimlilik,1
+productivity,üretkenlik,1
+resource,kaynak,1
+capacity,kapasite,1
+limit,sınır,1
+restriction,kısıtlama,1
+permission,izin,1
+approval,onay,1
+feedback,geri bildirim,1
+response,yanıt,1
+reaction,tepki,1
+complaint,şikâyet,1
+request,istek,1
+demand,talep,1
+supply,arz,1
+delivery time,teslim süresi,1
+availability,mevcudiyet,1
+schedule,program,1
+timeline,zaman çizelgesi,1
+milestone,dönüm noktası,1
+progress,ilerleme,1
+status,durum,1
+update,güncelleme,1
+version,sürüm,1
+release,yayın,1
+launch,piyasaya sürmek,1
+maintenance,bakım,1
+support desk,destek masası,1
+customer service,müşteri hizmetleri,1
+user experience,kullanıcı deneyimi,1
+interface,arayüz,1
+function,fonksiyon,1
+operation,işlem,1
+process flow,süreç akışı,1
+automation,otomasyon,1
+integration,entegrasyon,1
+compatibility,uyumluluk,1
+security,güvenlik,1
+privacy,gizlilik,1
+risk management,risk yönetimi,1
+backup,yedekleme,1
+restore,geri yüklemek,1
+access,erişim,1
+authorization,yetkilendirme,1
+authentication,kimlik doğrulama,1
+account,hesap,1
+profile,profil,1
+setting,ayar,1
+configuration,yapılandırma,1
+customization,özelleştirme,1
+notification,bildirim,1
+alert,uyarı,1
+message center,mesaj merkezi,1
+log,kayıt,1
+reporting,raporlama,1
+analysis,analiz,1
+statistics,istatistik,1
+data,veri,1
+dataset,veri seti,1
+record,kayıt,1
+entry,girdi,1
+field,alan,1
+value,değer,1
+format,format,1
+template,şablon,1
+example case,örnek durum,1
+use case,kullanım senaryosu,1
+scenario,senaryo,1
+workflow,iş akışı,1
+task list,görev listesi,1
+assignment,atama,1
+submission,teslim,1
+review,inceleme,1
+evaluation,değerlendirme,1
+rating,puanlama,1
+scoreboard,skor tablosu,1
+achievement,başarım,1
+reward,ödül,1
+penalty,ceza,1
+rule set,kural seti,1
+compliance,uyum,1
+violation,ihlâl,1
+resolution,çözüm,1
+closure,kapanış,1
+follow-up,takip,1
+summary,özet,1
+overview,genel bakış,1
+introduction,giriş,1
+conclusion,sonuç,1
+reference,referans,1
+source,kaynak,1
+attachment,ek,1
+upload,yükleme,1
+download,indirme,1
+sync,senkronizasyon,1
+refresh,yenileme,1
+restart,yeniden başlatma,1
+shutdown,kapatma,1
+achievement,başarı,2
+adjust,ayarlamak,2
+affect,etkilemek,2
+analysis,analiz,2
+announce,duyurmak,2
+assume,varsaymak,2
+attempt,girişim,2
+balance,denge,2
+challenge,zorluk,2
+circumstance,koşul,2
+claim,iddia etmek,2
+collaborate,iş birliği yapmak,2
+commitment,bağlılık,2
+communicate,iletişim kurmak,2
+compare,karşılaştırmak,2
+concentrate,odaklanmak,2
+conduct,yürütmek,2
+confirm,onaylamak,2
+consider,düşünmek,2
+consume,tüketmek,2
+contribute,katkı sağlamak,2
+cope with,baş etmek,2
+criteria,kriterler,2
+define,tanımlamak,2
+demonstrate,göstermek,2
+determine,belirlemek,2
+distinguish,ayırt etmek,2
+distribute,dağıtmak,2
+economy,ekonomi,2
+efficient,verimli,2
+emphasize,vurgulamak,2
+enable,olanak sağlamak,2
+encounter,karşılaşmak,2
+engage,meşgul olmak,2
+establish,kurmak,2
+evaluate,değerlendirmek,2
+expand,genişletmek,2
+explain,açıklamak,2
+explore,keşfetmek,2
+factor in,hesaba katmak,2
+flexible,esnek,2
+focus on,odaklanmak,2
+forecast,tahmin,2
+fund,fonlamak,2
+generate,üretmek,2
+handle,ele almak,2
+impact,etki,2
+implement,uygulamak,2
+indicate,göstermek,2
+influence,etkilemek,2
+initial,ilk,2
+insight,içgörü,2
+interpret,yorumlamak,2
+involve,dahil etmek,2
+issue,konu,2
+justify,haklı çıkarmak,2
+maintain,sürdürmek,2
+measure,ölçmek,2
+monitor,izlemek,2
+negotiate,müzakere etmek,2
+objective,amaç,2
+obtain,elde etmek,2
+outcome,sonuç,2
+participate,katılmak,2
+perceive,algılamak,2
+perspective,bakış açısı,2
+prioritize,önceliklendirmek,2
+process,işlemek,2
+propose,önermek,2
+pursue,peşinden gitmek,2
+relevant,ilgili,2
+rely on,güvenmek,2
+require,gerektirmek,2
+respond,yanıtlamak,2
+retain,elde tutmak,2
+review,gözden geçirmek,2
+schedule,planlamak,2
+significant,önemli,2
+simulate,simüle etmek,2
+source,kaynak,2
+strategy,strateji,2
+structure,yapı,2
+sufficient,yeterli,2
+sustain,sürdürmek,2
+target,hedeflemek,2
+transform,dönüştürmek,2
+trend,eğilim,2
+valid,geçerli,2
+vary,değişmek,2
+volume,hacim,2
+widespread,yaygın,2
+workload,iş yükü,2
+adapt,uyum sağlamak,2
+allocate,tahsis etmek,2
+anticipate,öngörmek,2
+assess,değerlendirmek,2
+boost,arttırmak,2
+clarify,açıklığa kavuşturmak,2
+collapse,çökmek,2
+combine,birleştirmek,2
+compensate,telafi etmek,2
+comply,uyum sağlamak,2
+conclude,sonuçlandırmak,2
+conflict,çatışma,2
+consequence,sonuç,2
+consist of,oluşmak,2
+constraint,kısıt,2
+consult,danişmak,2
+consume,tüketmek,2
+coordinate,koordine etmek,2
+decline,azalmak,2
+dedicate,adamak,2
+delay,geciktirmek,2
+derive,türetmek,2
+detect,tespit etmek,2
+diminish,azalmak,2
+diverse,çeşitli,2
+dominate,baskın olmak,2
+eliminate,ortadan kaldırmak,2
+emerge,ortaya çıkmak,2
+ensure,sağlamak,2
+estimate,tahmin etmek,2
+evidence,kanıt,2
+exclude,hariç tutmak,2
+expand,genişlemek,2
+expose,açığa çıkarmak,2
+facilitate,kolaylaştırmak,2
+fluctuate,dalgalanmak,2
+fundamental,temel,2
+identify,belirlemek,2
+illustrate,örneklemek,2
+impact on,etkilemek,2
+imply,ima etmek,2
+incentive,teşvik,2
+incur,katlanmak,2
+inevitable,kaçınılmaz,2
+inform, bilgilendirmek,2
+inhibit,engellemek,2
+initiate,başlatmak,2
+integrate,entegre etmek,2
+interact,etkileşim kurmak,2
+interpretation,yorum,2
+justify,gerekçelendirmek,2
+launch,başlatmak,2
+limitation,sınırlama,2
+link,bağlantı,2
+maintain,sürdürmek,2
+modify,değiştirmek,2
+motivate,motive etmek,2
+nevertheless,yine de,2
+observe,gözlemlemek,2
+obstacle,engel,2
+optimize,iyileştirmek,2
+outweigh,baskın gelmek,2
+overcome,üstesinden gelmek,2
+permanent,kalıcı,2
+potential, potansiyel,2
+predict,öngörmek,2
+preference,tercih,2
+preserve,korumak,2
+previous,önceki,2
+promote,teşvik etmek,2
+proportion,oran,2
+prospect,olasılık,2
+react,tepki vermek,2
+recover,iyileşmek,2
+regardless of,rağmen,2
+relevant to,ilgili,2
+reputation,itibar,2
+resilient,dayanıklı,2
+resolve,çözmek,2
+restrict,kısıtlamak,2
+retain,elde tutmak,2
+reveal,ortaya çıkarmak,2
+shift,değişim,2
+shortage,kıtlık,2
+simulate,simüle etmek,2
+stability,istikrar,2
+strengthen,güçlendirmek,2
+sufficient,yeterli,2
+surpass,aşmak,2
+sustainability,sürdürülebilirlik,2
+temporary,geçici,2
+trigger,tetiklemek,2
+utilize,kullanmak,2
+viable,uygulanabilir,2
+abandon,terk etmek,2
+accomplish,başarmak,2
+account for,açıklamak,2
+acknowledge,kabul etmek,2
+acquire,edinmek,2
+adapt to,uyum sağlamak,2
+address,ele almak,2
+administer,yönetmek,2
+advocate,savunmak,2
+allocate resources,kaynak tahsis etmek,2
+alter,değiştirmek,2
+analyze,analiz etmek,2
+apply to,başvurmak,2
+approximate,yaklaşık,2
+arise,ortaya çıkmak,2
+assess risk,riski değerlendirmek,2
+attain,elde etmek,2
+attribute to,atfetmek,2
+avoid,kaçınmak,2
+benefit from,faydalanmak,2
+brief,özet,2
+capability,kabiliyet,2
+clarification,açıklama,2
+collapse,çöküş,2
+compile,derlemek,2
+comply with,uyum sağlamak,2
+contribute to,katkıda bulunmak,2
+cope with stress,stresle baş etmek,2
+counteract,dengelemek,2
+deduce,sonuç çıkarmak,2
+deficiency,eksiklik,2
+degrade,bozulmak,2
+deliberate,kasıtlı,2
+demographic,demografik,2
+dependence,bağımlılık,2
+deploy,konuşlandırmak,2
+derive from,çıkarım yapmak,2
+detect error,hata tespit etmek,2
+differ, farklı olmak,2
+dimension,boyut,2
+discard,atmak,2
+disrupt,aksatmak,2
+domestic,yerel,2
+duration,süre,2
+elaborate,detaylandırmak,2
+embed,yerleştirmek,2
+emission,emisyon,2
+empower,güçlendirmek,2
+enable access,erişim sağlamak,2
+enhance,arttırmak,2
+enforce,uygulamak,2
+entirely,tamamen,2
+equivalent,eşdeğer,2
+escalate,artmak,2
+evaluate performance,performansı değerlendirmek,2
+exceed,aşmak,2
+exclude from,hariç tutmak,2
+execute,uygulamak,2
+exhibit,sergilemek,2
+expand into,genişlemek,2
+exposure,maruz kalma,2
+external,dış,2
+facilitate process,süreci kolaylaştırmak,2
+feasible,uygulanabilir,2
+filter,filtrelemek,2
+flaw,kusur,2
+framework,çerçeve,2
+fulfill,yerine getirmek,2
+generate revenue,gelir üretmek,2
+global,küresel,2
+govern,yönetmek,2
+handle pressure,baskıyla başa çıkmak,2
+highlight,vurgulamak,2
+impact assessment,etki değerlendirmesi,2
+implement strategy,strateji uygulamak,2
+impose,dayatmak,2
+incentivize,teşvik etmek,2
+infrastructure,altyapı,2
+initiate process,süreç başlatmak,2
+input,girdi,2
+interfere,karışmak,2
+internal,iç,2
+investigate,araştırmak,2
+justify decision,kararı gerekçelendirmek,2
+key factor,ana faktör,2
+leverage,kaldıraç etkisi,2
+long-term,uzun vadeli,2
+maintain quality,kaliteyi sürdürmek,2
+manage risk,riski yönetmek,2
+mitigate,azaltmak,2
+monitor progress,ilerlemeyi izlemek,2
+mutual,karşılıklı,2
+negotiate terms,şartları müzakere etmek,2
+objective analysis,objektif analiz,2
+optimize performance,performansı optimize etmek,2
+outcome-based,sonuç odaklı,2
+overlook,göz ardı etmek,2
+parallel,paralel,2
+policy framework,politika çerçevesi,2
+predict outcome,sonucu öngörmek,2
+prioritize tasks,görevleri önceliklendirmek,2
+prolong,uzatmak,2
+prospective,olası,2
+qualitative,nitel,2
+quantitative,nicel,2
+rapid,hızlı,2
+reinforce,pekiştirmek,2
+relevant information,ilgili bilgi,2
+restructure,yeniden yapılandırmak,2
+retain control,kontrolü elde tutmak,2
+robust,sağlam,2
+scope,kapsam,2
+sequence,sıra,2
+significantly,önemli ölçüde,2
+simulate scenario,senaryoyu simüle etmek,2
+stakeholder, paydaş,2
+streamline,basitleştirmek,2
+sustainable growth,sürdürülebilir büyüme,2
+terminate,sonlandırmak,2
+transition,geçiş,2
+trigger event,olayı tetiklemek,2
+undergo,maruz kalmak,2
+update system,sistemi güncellemek,2
+utilization,kullanım,2
+validate,doğrulamak,2
+voluntary,gönüllü,2
+abstract,soyut,3
+accumulate,biriktirmek,3
+accurate,doğru,3
+adaptation,uyarlama,3
+adequate,yeterli,3
+adverse,olumsuz,3
+allocate,tahsis etmek,3
+ambiguity,belirsizlik,3
+analytical,analitik,3
+anticipation,beklenti,3
+assurance,güvence,3
+bias,önyargı,3
+capable,yetenekli,3
+coherent,tutarlı,3
+coincide,örtüşmek,3
+commodity,emtia,3
+compelling,ikna edici,3
+comprehensive,kapsamlı,3
+concurrent,eş zamanlı,3
+constraint,kısıt,3
+controversial,tartışmalı,3
+convey,iletmek,3
+correlate,ilişkilendirmek,3
+credible,güvenilir,3
+cumulative,kümülatif,3
+decline,gerilemek,3
+dedicated,adanmış,3
+definite,kesin,3
+derive,türetmek,3
+discrete,ayrı,3
+distinct,belirgin,3
+distort,çarpıtmak,3
+diversity,çeşitlilik,3
+dominant,baskın,3
+efficient,verimli,3
+eliminate,ortadan kaldırmak,3
+emerging,gelişen,3
+emphasis,vurgu,3
+empirical,deneysel,3
+enable,olanak sağlamak,3
+enforce,uygulamak,3
+enhancement,geliştirme,3
+equivalent,eşdeğer,3
+establish,kurmak,3
+ethical,etik,3
+evaluate,değerlendirmek,3
+evident,açık,3
+exceed,aşmak,3
+exclusive,özel,3
+explicit,açıkça belirtilmiş,3
+exposure,maruziyet,3
+feasible,uygulanabilir,3
+fluctuation,dalgalanma,3
+framework,çerçeve,3
+functionality,işlevsellik,3
+fundamental,temel,3
+generate,üretmek,3
+hypothesis,hipotez,3
+identical,aynı,3
+implicit,örtük,3
+implement,uygulamak,3
+independent,bağımsız,3
+indicator,gösterge,3
+inevitable,kaçınılmaz,3
+infrastructure,altyapı,3
+innovation,yenilik,3
+integrity,dürüstlük,3
+interpretation,yorum,3
+interval,aralık,3
+intrinsic,özgün,3
+justify,haklı çıkarmak,3
+likelihood,olasılık,3
+maintain,sürdürmek,3
+manipulate,manipüle etmek,3
+methodology,metodoloji,3
+minimize,asgariye indirmek,3
+notion,kavram,3
+objective,objektif,3
+outcome,sonuç,3
+overall,genel,3
+paradigm,paradigma,3
+parameter,parametre,3
+perceive,algılamak,3
+persist,sürmek,3
+phenomenon,olay,3
+policy,politika,3
+precise,kesin,3
+predict,öngörmek,3
+preliminary,ön,3
+presume,varsaymak,3
+priority,öncelik,3
+proportion,oran,3
+prospective,olası,3
+qualitative,nitel,3
+quantitative,nicel,3
+random,rasgele,3
+rationale,gerekçe,3
+reliable,güvenilir,3
+relevant,ilgili,3
+retain,elde tutmak,3
+scenario,senaryo,3
+significant,önemli,3
+simulate,simüle etmek,3
+subsequent,sonraki,3
+sufficient,yeterli,3
+sustain,sürdürmek,3
+theoretical,teorik,3
+transform,dönüştürmek,3
+trend,eğilim,3
+underlying,temelinde yatan,3
+utilize,kullanmak,3
+valid,geçerli,3
+variable,değişken,3
+viable,uygulanabilir,3
+accountability,hesap verebilirlik,3
+acquisition,edinim,3
+alignment,uyum,3
+allocate resources,kaynak tahsis etmek,3
+ambitious,iddialı,3
+anomaly,anomali,3
+approximation,yaklaştırma,3
+assert,iddia etmek,3
+assess impact,etkiyi değerlendirmek,3
+benchmark,kıyas ölçütü,3
+capability,kabiliyet,3
+catalyst,katalizör,3
+cohesion,uyum,3
+collateral,teminat,3
+competency,yetkinlik,3
+consolidate,pekiştirmek,3
+constraint management,kısıt yönetimi,3
+contingency,olasılık planı,3
+correlation,korelasyon,3
+credibility,güvenilirlik,3
+criteria-based,kriter bazlı,3
+decisive,belirleyici,3
+delegation,yetki devri,3
+deployment,dağıtım,3
+deteriorate,kötüleşmek,3
+diagnose,teşhis etmek,3
+differentiate,ayırt etmek,3
+disruption,aksama,3
+diversify,çeşitlendirmek,3
+downturn,durgunluk,3
+dynamic,dinamik,3
+ecosystem,ekosistem,3
+efficacy,etkinlik,3
+endorse,onaylamak,3
+envision,hayal etmek,3
+escalation,artış,3
+evaluate performance,performansı değerlendirmek,3
+evolution,evrim,3
+excessive,aşırı,3
+execute plan,planı uygulamak,3
+exponential,üstel,3
+externality,dışsallık,3
+feasibility,uygulanabilirlik,3
+fiscal,mali,3
+forecasting,tahminleme,3
+formulate,formüle etmek,3
+governance,yönetişim,3
+granular,ayrıntılı,3
+heterogeneous,heterojen,3
+holistic,bütüncül,3
+hypothetical,varsayımsal,3
+implication,çıkarım,3
+incentive structure,teşvik yapısı,3
+induce,tetiklemek,3
+inefficiency,verimsizlik,3
+inference,çıkarım,3
+inherent,doğal,3
+institutional,kurumsal,3
+interdependency,karşılıklı bağımlılık,3
+intervention,müdahale,3
+iteration,tekrarlama,3
+leverage effect,kaldıraç etkisi,3
+liability,sorumluluk,3
+magnitude,büyüklük,3
+marginal,marjinal,3
+mitigation,azaltma,3
+moderate,ılımlı,3
+momentum,ivme,3
+normative,normatif,3
+optimization,optimizasyon,3
+paradox,paradoks,3
+performance-driven,performans odaklı,3
+prevalent,yaygın,3
+projection,projeksiyon,3
+protocol,protokol,3
+rationalize,akla uydurmak,3
+redundancy,yedeklilik,3
+regulatory,düzenleyici,3
+resilience,dayanıklılık,3
+resource allocation,kaynak tahsisi,3
+risk exposure,risk maruziyeti,3
+robustness,sağlamlık,3
+scalability,ölçeklenebilirlik,3
+stakeholder alignment,paydaş uyumu,3
+strategic planning,stratejik planlama,3
+structural,yapısal,3
+systemic,sistemsel,3
+threshold,eşik,3
+trade-off,ödünleşim,3
+trajectory,yörünge,3
+transparency,şeffaflık,3
+uncertainty,belirsizlik,3
+variance,varyans,3
+vulnerability,kırılganlık,3
+abstraction,soyutlama,3
+accelerate,hızlandırmak,3
+accompany,eşlik etmek,3
+accumulate data,veri biriktirmek,3
+adaptability,uyarlanabilirlik,3
+allocate budget,bütçe tahsis etmek,3
+ambiguity tolerance,belirsizliğe tolerans,3
+analytical thinking,analitik düşünme,3
+anticipate demand,talebi öngörmek,3
+assess feasibility,uygulanabilirliği değerlendirmek,3
+assumption,varsayım,3
+autonomous,özerk,3
+benchmarking,kıyaslama,3
+bottleneck,darboğaz,3
+calibrate,kalibre etmek,3
+capacity planning,kapasite planlaması,3
+cognitive,bilişsel,3
+coexist,bir arada var olmak,3
+collaborative,iş birlikçi,3
+comparative,karşılaştırmalı,3
+complexity,karmaşıklık,3
+compliance requirement,uyum gereksinimi,3
+compound effect,bileşik etki,3
+conceptual,kavramsal,3
+convergence,yakınsama,3
+cost efficiency,maliyet verimliliği,3
+cross-functional,fonksiyonlar arası,3
+data-driven,veri odaklı,3
+decision-making,karar verme,3
+decentralized,merkezi olmayan,3
+deductive reasoning,tümdengelim,3
+dependency,bağımlılık,3
+derive insight,içgörü çıkarmak,3
+diagnostic,teşhis edici,3
+disseminate,yaymak,3
+domain knowledge,alan bilgisi,3
+economic viability,ekonomik uygulanabilirlik,3
+efficiency gain,verim artışı,3
+empowerment,güçlendirme,3
+end-to-end,uca uca,3
+enterprise-level,kurumsal düzeyde,3
+entity,varlık,3
+environmental impact,çevresel etki,3
+ethical concern,etik kaygı,3
+evidence-based,kanıta dayalı,3
+exception handling,istisna yönetimi,3
+execution plan,uygulama planı,3
+experimental,deneysel,3
+explanatory,açıklayıcı,3
+extrapolate,ekstrapole etmek,3
+failure mode,arıza modu,3
+feedback loop,geri bildirim döngüsü,3
+forecast accuracy,tahmin doğruluğu,3
+functional requirement,işlevsel gereksinim,3
+go-to-market,pazara giriş,3
+governance model,yönetişim modeli,3
+growth trajectory,büyüme eğrisi,3
+high-level,yüksek seviyeli,3
+holistic view,bütüncül bakış,3
+impact-driven,etki odaklı,3
+implementation roadmap,uygulama yol haritası,3
+in-depth,derinlemesine,3
+industry standard,sektör standardı,3
+information asymmetry,bilgi asimetrisi,3
+informed decision,bilinçli karar,3
+innovation pipeline,yenilik hattı,3
+institutional framework,kurumsal çerçeve,3
+iterative,iteratif,3
+key takeaway,temel çıkarım,3
+knowledge transfer,bilgi aktarımı,3
+longitudinal,uzunlamasına,3
+macro-level,makro düzey,3
+maturity level,olgunluk seviyesi,3
+measurement error,ölçüm hatası,3
+methodological,metodolojik,3
+model assumption,model varsayımı,3
+multi-dimensional,çok boyutlu,3
+nonlinear,doğrusal olmayan,3
+operational efficiency,operasyonel verimlilik,3
+optimization strategy,optimizasyon stratejisi,3
+organizational alignment,organizasyonel uyum,3
+outlier,aykırı değer,3
+performance indicator,performans göstergesi,3
+predictive model,tahmin modeli,3
+process optimization,süreç optimizasyonu,3
+qualitative analysis,nitel analiz,3
+quantitative assessment,nicel değerlendirme,3
+risk mitigation,risk azaltma,3
+root cause,temel neden,3
+scenario planning,senaryo planlama,3
+scalable solution,ölçeklenebilir çözüm,3
+sensitivity analysis,duyarlılık analizi,3
+stakeholder engagement,paydaş katılımı,3
+strategic alignment,stratejik uyum,3
+structural change,yapısal değişim,3
+system integration,sistem entegrasyonu,3
+technical debt,teknik borç,3
+theoretical framework,teorik çerçeve,3
+time horizon,zaman ufku,3
+trade-off analysis,ödünleşim analizi,3
+uncertainty modeling,belirsizlik modelleme,3
+value proposition,değer önerisi,3
+variance analysis,varyans analizi,3
+viability assessment,uygulanabilirlik değerlendirmesi,3
+workflow optimization,iş akışı optimizasyonu,3
+aberration,anormallik,4
+account for,hesaba katmak,4
+acumen,sezgi,4
+adjacent,bitişik,4
+advocate for,savunmak,4
+aesthetic,estetik,4
+aggregate,toplam,4
+allocate funds,fon tahsis etmek,4
+ambivalence,ikirciklilik,4
+analogy,benzetme,4
+anecdotal,anekdotsal,4
+anticipatory,öngörülü,4
+arbitrary,keyfi,4
+articulate,ifade etmek,4
+aspiration,özlem,4
+assertive,iddialı,4
+attainable,ulaşılabilir,4
+auditable,denetlenebilir,4
+autonomy,özerklik,4
+backlash,geri tepme,4
+benchmark against,karşılaştırmak,4
+bias mitigation,önyargı azaltma,4
+byproduct,yan ürün,4
+calibrated,ayarlanmış,4
+causal,nedensel,4
+caveat,çekince,4
+coalesce,birleşmek,4
+coherent strategy,tutarlı strateji,4
+complacency,rehavet,4
+conducive,elverişli,4
+conflate,karıştırmak,4
+consequential,sonuç doğuran,4
+contention,çekişme,4
+contingent,koşula bağlı,4
+counterintuitive,sezgisel olmayan,4
+credence,inanç,4
+culminate,sonuçlanmak,4
+curtail,kısaltmak,4
+de facto,fiilen,4
+decouple,ayırmak,4
+deference,saygı,4
+delineate,sınır çizmek,4
+derivative,türev,4
+deterrent,caydırıcı,4
+detrimental,zararlı,4
+discretion,takdir yetkisi,4
+dissemination,yayma,4
+divergent,ayrışan,4
+doctrine,doktrin,4
+downstream,aşağı akış,4
+elusive,zor yakalanan,4
+embodiment,tezahür,4
+empirical evidence,ampirik kanıt,4
+endogenous,içsel,4
+entail,gerektirmek,4
+enumerate,sıralamak,4
+ephemeral,geçici,4
+equilibrium,denge,4
+erroneous,hatalı,4
+esoteric,ezoterik,4
+ethos,etik anlayış,4
+exacerbate,kötüleştirmek,4
+exogenous,dışsal,4
+expedite,hızlandırmak,4
+explicitly,açıkça,4
+extant,mevcut,4
+facet,yön,4
+fallacy,safsata,4
+feasible outcome,uygulanabilir sonuç,4
+fidelity,sadakat,4
+foreseeable,öngörülebilir,4
+fortuitous,tesadüfi,4
+friction,sürtüşme,4
+functional parity,işlevsel eşitlik,4
+granularity,ayrıntı düzeyi,4
+heuristic,sezgisel yöntem,4
+holistic approach,bütüncül yaklaşım,4
+idiosyncratic,kendine özgü,4
+immutable,değişmez,4
+impetus,ivme,4
+inadvertent,kasıtsız,4
+incumbent,mevcut,4
+indeterminate,belirsiz,4
+indispensable,vazgeçilmez,4
+inference drawing,çıkarım yapmak,4
+inherent risk,doğal risk,4
+interplay,etkileşim,4
+intricate,karmaşık,4
+irrespective of,bağımsız olarak,4
+juxtapose,yan yana koymak,4
+latent,gizli,4
+magnitude estimation,büyüklük tahmini,4
+marginal utility,marjinal fayda,4
+mitigate risk,riski azaltmak,4
+normative claim,normatif iddia,4
+nuance,ince ayrım,4
+obviate,gereksiz kılmak,4
+opaque,opak,4
+operationalize,uygulamaya dökmek,4
+overarching,kapsayıcı,4
+parity,denkliği,4
+pervasive,yaygın,4
+postulate,varsaymak,4
+precipitate,hızlandırmak,4
+prerequisite,ön koşul,4
+proliferation,yayılma,4
+qualifier,niteleyici,4
+rationale articulation,gerekçe açıklaması,4
+recourse,başvuru,4
+refute,çürütmek,4
+regime,reji̇m,4
+salient,belirgin,4
+scrutinize,incelemek,4
+seminal,öncü,4
+synthesize,sentezlemek,4
+tenable,savunulabilir,4
+trade-off management,ödünleşim yönetimi,4
+ubiquitous,her yerde bulunan,4
+underpin,temellendirmek,4
+validate findings,bulguları doğrulamak,4
+abrogate,yürürlükten kaldırmak,5
+anachronistic,çağ dışı,5
+antithesis,zıtlık,5
+axiomatic,apaçık,5
+capricious,değişken,5
+circumspect,ihtiyatlı,5
+conjecture,tahmin yürütmek,5
+consequentialist,sonuç odaklı,5
+construe,yorumlamak,5
+contingency planning,olası durum planlaması,5
+counterfactual,olmamış varsayım,5
+decisiveness,kararlılık,5
+deconstruct,yapıbozuma uğratmak,5
+dichotomy,ikilem,5
+disparate,benzeşmez,5
+dogmatic,dogmatik,5
+epistemology,bilgi felsefesi,5
+equivocal,muğlak,5
+eschew,kaçınmak,5
+exegesis,metin yorumu,5
+falsifiability,yanlışlanabilirlik,5
+fastidious,aşırı titiz,5
+heuristics,sezgisel kurallar,5
+hyperbolic,abartılı,5
+idempotent,tekrarda değişmeyen,5
+incommensurable,ölçülemez,5
+ineluctable,kaçınılmaz,5
+instrumentalize,araçsallaştırmak,5
+interrogate,sorgulamak,5
+intransigent,uzlaşmaz,5
+irrefutable,çürütülemez,5
+juxtaposition,yan yana getirme,5
+lexical,leksik,5
+liminal,eşiksel,5
+logically sound,mantıksal olarak tutarlı,5
+metacognition,üstbiliş,5
+methodological rigor,metodolojik titizlik,5
+misconstrue,yanlış yorumlamak,5
+multifaceted,çok yönlü,5
+nontrivial,önemsiz olmayan,5
+normativity,normatiflik,5
+ontological,ontolojik,5
+parsimony,sadelik ilkesi,5
+path dependence,yol bağımlılığı,5
+phenomenological,fenomenolojik,5
+polysemy,çok anlamlılık,5
+post hoc reasoning,sonradan gerekçelendirme,5
+praxis,kuramın pratiği,5
+presupposition,önvarsayım,5
+prolegomena,öncül tartışma,5
+propositional,önermesel,5
+quasi-experimental,yarı deneysel,5
+reification,şeyleştirme,5
+retrodiction,geriye dönük çıkarım,5
+salvageable,kurtarılabilir,5
+self-referential,öz gönderimli,5
+sophistry,safsata,5
+teleological,ereksel,5
+theoretical saturation,kuramsal doygunluk,5
+transductive,transdüktif,5
+under-specification,yetersiz tanımlama,5
+variance decomposition,varyans ayrıştırma,5
+verisimilitude,gerçeğe benzerlik,5
+
+

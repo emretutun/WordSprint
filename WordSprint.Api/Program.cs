@@ -8,6 +8,7 @@ using WordSprint.Infrastructure.Persistence;
 using WordSprint.Infrastructure.Seed;
 using Microsoft.OpenApi.Models;
 using WordSprint.Api.Services;
+using WordSprint.Infrastructure.Import;
 
 
 
@@ -96,5 +97,19 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
+
+var importEnabled = app.Configuration.GetValue<bool>("WordImport:Enabled");
+
+if (importEnabled)
+{
+    using var scope = app.Services.CreateScope();
+    var db = scope.ServiceProvider.GetRequiredService<WordSprintDbContext>();
+    var importer = new WordCsvImportService(db);
+
+    var csvPath = Path.Combine(app.Environment.ContentRootPath, "Data", "words.csv");
+
+    var added = await importer.ImportAsync(csvPath);
+    Console.WriteLine($"[WORD IMPORT] {added} yeni kelime eklendi.");
+}
 
 app.Run();

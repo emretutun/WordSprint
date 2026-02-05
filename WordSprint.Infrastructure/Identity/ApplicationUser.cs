@@ -1,9 +1,10 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Identity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Identity;
+using WordSprint.Core.Enums;
 
 namespace WordSprint.Infrastructure.Identity;
 
@@ -13,7 +14,9 @@ public class ApplicationUser : IdentityUser
     public string? LastName { get; set; }
 
     public int DailyWordGoal { get; set; } = 10;
-    public string? EstimatedLevel { get; set; }
+    
 
     public string? ProfilePhotoFileName { get; set; }
+    public CeLevel Level { get; set; } = CeLevel.A1;
+
 }

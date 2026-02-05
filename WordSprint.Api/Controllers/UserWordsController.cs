@@ -4,6 +4,9 @@ using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
 using WordSprint.Core.Entities;
 using WordSprint.Infrastructure.Persistence;
+using WordSprint.Core.Enums;
+using WordSprint.Infrastructure.Identity;
+using Microsoft.AspNetCore.Identity;
 
 namespace WordSprint.Api.Controllers;
 
@@ -13,10 +16,12 @@ namespace WordSprint.Api.Controllers;
 public class UserWordsController : ControllerBase
 {
     private readonly WordSprintDbContext _db;
+    private readonly UserManager<ApplicationUser> _userManager;
 
-    public UserWordsController(WordSprintDbContext db)
+    public UserWordsController(WordSprintDbContext db, UserManager<ApplicationUser> userManager)
     {
         _db = db;
+        _userManager = userManager;
     }
 
     // Kullanıcıya yeni 10 kelime atar (zaten atanmışsa tekrar eklemez)
@@ -30,37 +35,46 @@ public class UserWordsController : ControllerBase
         if (string.IsNullOrWhiteSpace(userId))
             return Unauthorized();
 
-        // Kullanıcının zaten bildiği/atanmış kelime id’leri
-        var existingWordIds = await _db.UserWords
-            .Where(x => x.UserId == userId)
-            .Select(x => x.WordId)
-            .ToListAsync();
+        // kullanıcı level’ını al
+        var user = await _userManager.FindByIdAsync(userId);
+        if (user == null) return Unauthorized();
 
-        // Mevcut olmayanlardan random seç
-        var newWords = await _db.Words
-            .Where(w => !existingWordIds.Contains(w.Id))
-            .OrderBy(x => Guid.NewGuid())
+        short u = (short)user.Level;
+        short min = (short)Math.Max(u - 1, 0);
+
+        // kullanıcının zaten sahip olduğu wordId’ler
+        var ownedIds = _db.UserWords
+            .Where(uw => uw.UserId == userId)
+            .Select(uw => uw.WordId);
+
+        // A2 => A1+A2 filtresi burada
+        var wordIdsToAssign = await _db.Words
+            .Where(w => (short)w.Level >= min && (short)w.Level <= u)
+            .Where(w => !ownedIds.Contains(w.Id))
+            .OrderBy(_ => Guid.NewGuid())
             .Take(count)
+            .Select(w => w.Id)
             .ToListAsync();
 
-        if (newWords.Count == 0)
-            return Ok(new List<object>());
+        if (wordIdsToAssign.Count == 0)
+            return Ok(new { assigned = 0 });
 
-        // UserWord kayıtlarını oluştur
-        var userWords = newWords.Select(w => new UserWord
+        var rows = wordIdsToAssign.Select(id => new UserWord
         {
             UserId = userId,
-            WordId = w.Id,
-            IsLearned = false
-        }).ToList();
+            WordId = id,
+            IsLearned = false,
+            CorrectCount = 0,
+            WrongCount = 0,
+            LastTestedAtUtc = null
+        });
 
-        await _db.UserWords.AddRangeAsync(userWords);
+        await _db.UserWords.AddRangeAsync(rows);
         await _db.SaveChangesAsync();
 
-        // kullanıcıya dön
-        var response = newWords.Select(w => new { w.Id, w.English, w.Turkish }).ToList();
-        return Ok(response);
+        return Ok(new { assigned = wordIdsToAssign.Count });
     }
+
 
     // Kullanıcının şu an öğrenme listesi (IsLearned=false)
     [HttpGet("learning")]
@@ -79,12 +93,14 @@ public class UserWordsController : ControllerBase
                 wordId = x.WordId,
                 english = x.Word.English,
                 turkish = x.Word.Turkish,
+                level = (int)x.Word.Level,        // ✅ EKLENDİ
                 createdAtUtc = x.CreatedAtUtc
             })
             .ToListAsync();
 
         return Ok(list);
     }
+
 
     [HttpGet("learned")]
     public async Task<IActionResult> GetLearnedList()
@@ -102,6 +118,7 @@ public class UserWordsController : ControllerBase
                 wordId = x.WordId,
                 english = x.Word.English,
                 turkish = x.Word.Turkish,
+                level = (int)x.Word.Level,        // ✅ EKLENDİ
                 correctCount = x.CorrectCount,
                 wrongCount = x.WrongCount,
                 lastTestedAtUtc = x.LastTestedAtUtc
@@ -110,6 +127,7 @@ public class UserWordsController : ControllerBase
 
         return Ok(list);
     }
+
 
 
 }

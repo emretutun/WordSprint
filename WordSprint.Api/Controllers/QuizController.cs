@@ -58,6 +58,7 @@ public class QuizController : ControllerBase
             var q = new QuizQuestionDto
             {
                 WordId = w.Id,
+                Level = (int)w.Level, 
                 Mode = mode
             };
 
@@ -228,6 +229,7 @@ public class QuizController : ControllerBase
             var q = new QuizQuestionDto
             {
                 WordId = w.Id,
+                Level = (int)w.Level,
                 Mode = mode
             };
 
