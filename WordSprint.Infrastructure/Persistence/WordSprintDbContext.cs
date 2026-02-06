@@ -16,6 +16,8 @@ public class WordSprintDbContext : IdentityDbContext<ApplicationUser>
 
     public DbSet<Word> Words => Set<Word>();
     public DbSet<UserWord> UserWords => Set<UserWord>();
+    public DbSet<UserDailyActivity> UserDailyActivities => Set<UserDailyActivity>();
+
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
@@ -25,7 +27,7 @@ public class WordSprintDbContext : IdentityDbContext<ApplicationUser>
         {
             e.Property(x => x.English).HasMaxLength(100).IsRequired();
             e.Property(x => x.Turkish).HasMaxLength(100).IsRequired();
-            e.HasIndex(x => x.English);
+            e.HasIndex(x => x.English).IsUnique();
         });
 
         builder.Entity<UserWord>(e =>
@@ -37,5 +39,8 @@ public class WordSprintDbContext : IdentityDbContext<ApplicationUser>
              .HasForeignKey(x => x.WordId)
              .OnDelete(DeleteBehavior.Cascade);
         });
+        builder.Entity<UserDailyActivity>()
+            .HasIndex(x => new { x.UserId, x.DayUtc })
+            .IsUnique();
     }
 }

@@ -12,4 +12,5 @@ public class SubmitQuizAnswer
 {
     public int WordId { get; set; }
     public string Answer { get; set; } = default!;
+    public QuizMode Mode { get; set; }  
 }

@@ -15,5 +15,10 @@ public class QuizResultItem
 {
     public int WordId { get; set; }
     public bool IsCorrect { get; set; }
-    public string CorrectAnswer { get; set; } = default!;
+
+    public string Prompt { get; set; } = "";
+    public string UserAnswer { get; set; } = "";
+    public string CorrectAnswer { get; set; } = "";
+
+    public int Level { get; set; } // 0..5 (A1..C2)
 }

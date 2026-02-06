@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using WordSprint.Infrastructure.Persistence;
@@ -11,9 +12,11 @@ using WordSprint.Infrastructure.Persistence;
 namespace WordSprint.Infrastructure.Migrations
 {
     [DbContext(typeof(WordSprintDbContext))]
-    partial class WordSprintDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260206135739_AddUserDailyActivityLeaderboard")]
+    partial class AddUserDailyActivityLeaderboard
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -249,8 +252,7 @@ namespace WordSprint.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("English")
-                        .IsUnique();
+                    b.HasIndex("English");
 
                     b.ToTable("Words");
                 });
