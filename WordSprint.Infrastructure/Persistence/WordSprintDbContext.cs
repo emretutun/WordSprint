@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using WordSprint.Core.Entities;
 using WordSprint.Infrastructure.Identity;
 
+
 namespace WordSprint.Infrastructure.Persistence;
 
 public class WordSprintDbContext : IdentityDbContext<ApplicationUser>
@@ -17,6 +18,8 @@ public class WordSprintDbContext : IdentityDbContext<ApplicationUser>
     public DbSet<Word> Words => Set<Word>();
     public DbSet<UserWord> UserWords => Set<UserWord>();
     public DbSet<UserDailyActivity> UserDailyActivities => Set<UserDailyActivity>();
+    public DbSet<PasswordResetCode> PasswordResetCodes => Set<PasswordResetCode>();
+
 
 
     protected override void OnModelCreating(ModelBuilder builder)

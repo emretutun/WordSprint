@@ -8,6 +8,10 @@ using Microsoft.AspNetCore.WebUtilities;
 using System.Text;
 using Microsoft.AspNetCore.Authorization;
 using System.Security.Claims;
+using WordSprint.Infrastructure.Persistence;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+
 
 
 namespace WordSprint.Api.Controllers;
@@ -20,17 +24,20 @@ public class AuthController : ControllerBase
     private readonly SignInManager<ApplicationUser> _signInManager;
     private readonly JwtTokenService _jwt;
     private readonly EmailService _email;
+    private readonly WordSprintDbContext _db;
 
     public AuthController(
         UserManager<ApplicationUser> userManager,
         SignInManager<ApplicationUser> signInManager,
         JwtTokenService jwt,
-        EmailService email)
+        EmailService email,
+        WordSprintDbContext db)
     {
         _userManager = userManager;
         _signInManager = signInManager;
         _jwt = jwt;
         _email = email;
+        _db = db;
     }
 
     [HttpPost("register")]
@@ -174,5 +181,148 @@ public class AuthController : ControllerBase
 
         return Ok(new { message = "Password changed ✅" });
     }
+
+    [HttpPost("forgot-password-code")]
+    public async Task<IActionResult> ForgotPasswordCode(
+    ForgotPasswordCodeRequest request,
+    [FromServices] IConfiguration config)
+    {
+        var user = await _userManager.FindByEmailAsync(request.Email);
+
+        // Güvenlik: email var / yok fark ettirme
+        if (user == null || !user.EmailConfirmed)
+            return Ok(new { message = "If the email exists, a reset code has been sent." });
+
+        // Aynı kullanıcı için aktif kodları iptal et
+        var activeCodes = await _db.PasswordResetCodes
+            .Where(x => x.UserId == user.Id && x.UsedAtUtc == null && x.ExpiresAtUtc > DateTime.UtcNow)
+            .ToListAsync();
+
+        foreach (var c in activeCodes)
+            c.UsedAtUtc = DateTime.UtcNow;
+
+        // Yeni kod üret
+        var code = ResetCodeGenerator.Generate(6);
+
+        var pepper = config["Security:ResetCodePepper"]
+            ?? throw new Exception("ResetCodePepper not configured");
+
+        var codeHash = ResetCodeGenerator.Hash(code, user.Id, pepper);
+
+        _db.PasswordResetCodes.Add(new PasswordResetCode
+        {
+            UserId = user.Id,
+            CodeHash = codeHash,
+            CreatedAtUtc = DateTime.UtcNow,
+            ExpiresAtUtc = DateTime.UtcNow.AddMinutes(10)
+        });
+
+        await _db.SaveChangesAsync();
+
+        var html = $@"
+<h3>WordSprint - Şifre Sıfırlama Kodu</h3>
+<p>Şifre sıfırlama kodun:</p>
+<p style='font-size:22px;font-weight:bold;letter-spacing:2px'>{code}</p>
+<p>Kod 10 dakika geçerlidir.</p>
+<p>Eğer bu isteği sen yapmadıysan görmezden gelebilirsin.</p>";
+
+        await _email.SendAsync(
+            user.Email!,
+            "WordSprint - Password Reset Code",
+            html);
+
+        return Ok(new { message = "If the email exists, a reset code has been sent." });
+    }
+
+    [HttpPost("verify-reset-code")]
+    public async Task<IActionResult> VerifyResetCode(
+    VerifyResetCodeRequest request,
+    [FromServices] IConfiguration config)
+    {
+        var user = await _userManager.FindByEmailAsync(request.Email);
+
+        // Güvenlik: detay verme
+        if (user == null)
+            return BadRequest("Invalid code.");
+
+        var codeRow = await _db.PasswordResetCodes
+            .Where(x => x.UserId == user.Id && x.UsedAtUtc == null && x.ExpiresAtUtc > DateTime.UtcNow)
+            .OrderByDescending(x => x.CreatedAtUtc)
+            .FirstOrDefaultAsync();
+
+        if (codeRow == null)
+            return BadRequest("Invalid code.");
+
+        var pepper = config["Security:ResetCodePepper"]
+            ?? throw new Exception("ResetCodePepper not configured");
+
+        var incomingHash = ResetCodeGenerator.Hash(request.Code, user.Id, pepper);
+
+        if (!string.Equals(codeRow.CodeHash, incomingHash, StringComparison.OrdinalIgnoreCase))
+        {
+            codeRow.FailedAttempts += 1;
+
+            // 5 yanlış deneme -> kodu iptal et
+            if (codeRow.FailedAttempts >= 5)
+                codeRow.UsedAtUtc = DateTime.UtcNow;
+
+            await _db.SaveChangesAsync();
+            return BadRequest("Invalid code.");
+        }
+
+        return Ok(new { message = "Code verified ✅" });
+    }
+
+    [HttpPost("reset-password-with-code")]
+    public async Task<IActionResult> ResetPasswordWithCode(
+    ResetPasswordWithCodeRequest request,
+    [FromServices] IConfiguration config)
+    {
+        var user = await _userManager.FindByEmailAsync(request.Email);
+        if (user == null)
+            return BadRequest("Invalid request.");
+
+        var codeRow = await _db.PasswordResetCodes
+            .Where(x => x.UserId == user.Id && x.UsedAtUtc == null && x.ExpiresAtUtc > DateTime.UtcNow)
+            .OrderByDescending(x => x.CreatedAtUtc)
+            .FirstOrDefaultAsync();
+
+        if (codeRow == null)
+            return BadRequest("Invalid code.");
+
+        var pepper = config["Security:ResetCodePepper"]
+            ?? throw new Exception("ResetCodePepper not configured");
+
+        var incomingHash = ResetCodeGenerator.Hash(request.Code, user.Id, pepper);
+
+        if (!string.Equals(codeRow.CodeHash, incomingHash, StringComparison.OrdinalIgnoreCase))
+        {
+            codeRow.FailedAttempts += 1;
+            if (codeRow.FailedAttempts >= 5)
+                codeRow.UsedAtUtc = DateTime.UtcNow;
+
+            await _db.SaveChangesAsync();
+            return BadRequest("Invalid code.");
+        }
+
+        // kod tek kullanımlık
+        codeRow.UsedAtUtc = DateTime.UtcNow;
+        await _db.SaveChangesAsync();
+
+        // Identity üzerinden gerçek reset
+        var identityToken = await _userManager.GeneratePasswordResetTokenAsync(user);
+        var result = await _userManager.ResetPasswordAsync(
+            user,
+            identityToken,
+            request.NewPassword);
+
+        if (!result.Succeeded)
+            return BadRequest(result.Errors.Select(e => e.Description));
+
+        return Ok(new { message = "Password has been reset ✅" });
+    }
+
+
+
 
 }
