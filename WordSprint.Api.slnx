@@ -3,4 +3,5 @@
   <Project Path="WordSprint.Application/WordSprint.Application.csproj" />
   <Project Path="WordSprint.Core/WordSprint.Core.csproj" />
   <Project Path="WordSprint.Infrastructure/WordSprint.Infrastructure.csproj" />
+  <Project Path="WordSprint.Tests/WordSprint.Tests.csproj" Id="ceb3c683-42dd-46a5-bada-8ca40732073f" />
 </Solution>

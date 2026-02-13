@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\WordSprint.Application\WordSprint.Application.csproj" />
     <ProjectReference Include="..\WordSprint.Core\WordSprint.Core.csproj" />
   </ItemGroup>
 
