@@ -27,8 +27,8 @@ builder.Services.AddIdentityCore<ApplicationUser>(options =>
     options.Password.RequireDigit = false;
     options.Password.RequiredLength = 6;
 
-    
-    // options.SignIn.RequireConfirmedEmail = true;
+
+    // options.SignIn.RequireConfirmedEmail = true; mail doğrulaması
 })
 .AddEntityFrameworkStores<WordSprintDbContext>()
 .AddSignInManager()
